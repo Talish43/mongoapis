@@ -15,7 +15,7 @@ app.get("/",(req, res)=> {
 
     console.log(`Your server is running`);
     
-    res.json({msg:"Welcome to crud1"});
+    res.json({msg:"Welcome to mongooapis1 herokuapp"});
 
 });
 
