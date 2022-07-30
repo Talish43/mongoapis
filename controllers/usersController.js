@@ -13,8 +13,7 @@ module.exports.register = async (req, res)=>{
                 const user = await UserModal.create({
                     name,
                     email,
-                    password:hashed,
-                    admin:true
+                    password:hashed
                 });
                 const token = createToken({ id:user._id, name:user.name });
                 return res.status(201).json({msg:"your account has been created",token:token});
