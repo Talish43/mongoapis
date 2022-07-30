@@ -13,9 +13,9 @@ app.use(express.json());
 
 app.get("/",(req, res)=> {
 
-    console.log("success");
-
-    res.json({msg:"Welcome to crud"});
+    console.log(`Your server is running`);
+    
+    res.json({msg:"Welcome to crud1"});
 
 });
 
