@@ -13,6 +13,8 @@ app.use(express.json());
 
 app.get("/",(req, res)=> {
 
+    console.log("success");
+
     res.json({msg:"Welcome to crud"});
 
 });
