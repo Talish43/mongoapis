@@ -2,7 +2,7 @@ const express = require('express');
 const env = require('./config/envConfig');
 const cors = require("cors");
 const connect = require('./config/db');
-// const userRoutes = require("./routes/userRoutes");
+const userRoutes = require("./routes/userRoutes");
 const app = express();
 
 // Connect Database 
@@ -19,7 +19,7 @@ app.get("/",(req, res)=> {
 
 });
 
-// app.use("/api",userRoutes);
+app.use("/api",userRoutes);
 
 const port = env.PORT || 5000;
 
