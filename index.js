@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.get("/",(req, res)=> {
 
-    res.json({msg:"Welcome to crud"});
+    res.json({msg:"Welcome to crud1"});
 
 });
 
